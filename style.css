@@ -1,0 +1,361 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Manrope", "Segoe UI", sans-serif;
+    background-color: rgb(251, 249, 249);
+    color: #0e1b24;
+    
+}
+.container{
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+}
+img{
+    max-width: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 6vw;
+    background-color: #064988;
+    color: white;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 1000;
+    
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-inline: 10px;
+    color:whitesmoke;
+    padding: 6px 2px;
+    transition: color 0.2s ease, border-color 0.2s ease;
+
+}
+ul li a:hover{
+    color: black;
+    border-bottom:1px solid ;
+}
+.logo{
+    font-size: 17px;
+}
+.main{
+    display: flex;
+     justify-content: space-around;
+     align-items: center;
+    background-color: #115c5b;;
+    color: white;
+    min-height: calc(100vh - 80px);
+    padding: 120px 6vw 60px;
+    gap: 30px;
+}
+
+
+.maintext h1{
+     font-size: 45px;
+}
+.maintext h3{
+    font-size: 30px;
+    margin-top: 20px;
+}
+.maintext button {
+    width: 120px;
+    height: 40px;
+    background-color: white;
+    color:black;
+    border: none;
+    margin-top: 10px;
+    font-size: 17px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.maintext button:hover{
+    border: 2px solid black;
+    background-color: transparent;
+}
+.main img{
+    width: min(520px, 90vw);
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+.teams{
+    display: flex;
+    justify-content: center;
+    background-color:seashell;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 0 6vw 40px;
+
+
+}
+.teams .card{
+    background-color: seashell;
+    border-radius: 5px;
+    width: min(320px, 90vw);
+    margin-inline: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        
+}
+.card img {
+    width: 100%;
+    height: 360px;
+    border-radius: 5px;
+    display: block;
+    object-fit: cover;
+    
+     
+}
+.card p {
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+.head{
+    text-align: center;
+    padding: 30px 6vw;
+      
+    
+}    
+.teams .card:hover {
+    color: black;
+    border: 1px solid ;
+}
+.speciality {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 0 6vw 40px;
+    
+}
+.speciality .specialitycard {
+    width: min(320px, 90vw);
+    padding: 20px;
+    background-color: rgb(233, 224, 224);
+    text-align: center;
+    border-radius: 5px;
+    margin-inline: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+.specialitycard img {
+     width: 100%;
+    height: 320px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.specialitycard p {
+    margin-top: 15px;
+    font-size: 20px;
+}
+#Reviews {
+    width: min(900px, 92vw);
+    height: 320px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    
+
+}
+.previews {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 1s ease;
+    gap: 20px;
+    
+}
+.previews img {
+    width: min(300px, 40vw);
+    height: 320px;
+    margin-inline: 5px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.contact {
+  width: min(420px, 90vw);
+  height: auto;
+  background: #d3dfe1;
+  padding: 30px ;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: auto;
+  font-size: 18px;
+
+}
+.contact a:hover {
+  text-decoration: none;
+  color:gray ;
+}
+.contact button {
+  margin-top: 15px;
+  display: inline-block;
+  text-align: center;
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  
+  background-color: #25d366;
+  
+  
+}
+.contact button:hover {
+  background-color: #1ebe5d;
+}
+#contact  h1{
+    font-size: 40px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+    justify-content: space-around;
+    padding: 40px 60px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    box-sizing: border-box;
+    
+}
+.text p{
+    margin-top: 15px;
+    font-size: 20px;
+}
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 20px 10px 0;
+  font-size: 16px;
+  border-top: 1px solid rgba(255,255,255,0.4);
+  margin-top: 20px;
+}
+
+
+
+#doctor,
+#speciality,
+#Patient,
+#contact{
+    scroll-margin-top: 100px;
+    
+}
+
+.detail{
+    display: none;
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    top: 5%;
+    transform: translate(-50%,40%);
+    background-color: gray;
+    padding: 22px;
+    width: min(450px, 92vw);
+    
+}
+.content{
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+.content img{
+    width: min(200px, 90vw);
+    
+}
+.detail button{
+    position: relative;
+    top: -22px;
+    left: -22px;
+    width: 30px;
+    height: 30px;
+    background-color: #115c5b;
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#bar {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+ 
+@media screen and (max-width:1100px){
+    .main{
+        display: block;
+        text-align: center;
+        height: auto;
+    }
+    .maintext{
+        margin-top: 115px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .nav-links{
+        display: none;
+    }
+    .nav-links.open{
+        display: flex;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: #064988;
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px 0 20px;
+        border-top: 1px solid rgba(255,255,255,0.2);
+    }
+    #bar{
+        display: block;
+    }
+    .maintext h1{
+        font-size: 36px;
+    }
+    .maintext h3{
+        font-size: 22px;
+    }
+    #Reviews{
+        height: auto;
+        overflow: visible;
+    }
+    .previews{
+        position: static;
+        transform: none !important;
+        flex-wrap: wrap;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .previews img{
+        width: min(260px, 90vw);
+        height: auto;
+    }
+    .footer{
+        padding: 30px 6vw;
+        gap: 30px;
+    }
+} 
+   
+ 
